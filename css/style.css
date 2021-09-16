@@ -4,10 +4,17 @@ h1 {
     padding: 10px 10px 0 10px;
 }
 
+h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
 h3 {
     font-size: 15px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: left;
+    margin: 0;
     padding: 0 20px 20px 20px;
 }
 
@@ -39,7 +46,7 @@ body {
 
 #submitDiv {
    width: 100%;
-   margin: 15px 0;
+   /* margin: 15px 0; */
    outline: black 1px solid;
    display: flex;
 }
