@@ -17,6 +17,8 @@ const $weight = $('#weight');
 const $eyeColor = $('#eye-color');
 const $hairColor = $('#hair-color');
 let apiData;
+const $leftCharList = $('#leftCharList');
+let option;
 
 
 function handleGetData(event) {
@@ -31,17 +33,35 @@ function handleGetData(event) {
         (data) => {
             apiData = data;
             render();
-            console.log(data);
+            // console.log(apiData);
+            console.log(apiData.results);
+
+            apiData.results.forEach(element => {
+                let option = $('<option>');
+                option.addClass("option");
+                optionText = element.name;
+                option.html = optionText
+                $leftCharList.append(option);
+                
+
+                // console.log(option);
+
+
+
+            });
+
+
         },
         (error) => {
             console.log("Character not found", error);
+            
         }
     );
-    console.log(leftInput);
+    // console.log(leftInput);
 }
 
 function render() {
-    // $intelligence.text(apiData.results[0].powerstats.intelligence);
+    $charName1.text(apiData.results[0].name);
     $intelligence.text(apiData.results[0].powerstats.intelligence);
     $strength.text(apiData.results[0].powerstats.strength);
     // $speed.text(apiData.results[0].powerstats.speed);
@@ -49,6 +69,8 @@ function render() {
     // $power.text(apiData.results[0].powerstats.power)
 
 }
+
+
 
 $('#leftForm').on('submit' , handleGetData);
 

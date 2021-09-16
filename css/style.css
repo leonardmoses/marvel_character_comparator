@@ -55,7 +55,7 @@ body {
     width: 50%;
     background-color: blue;
     outline: black 1px solid;   
-
+    text-align: center;
 }
 
 #rightSubmitDiv {
@@ -80,6 +80,11 @@ body {
 
 #leftSubmitBtn, #rightSubmitBtn {
     cursor: pointer;
+}
+
+#leftcharList {
+    width: 41%;
+    text-align: center;
 }
 
 main {
