@@ -30,36 +30,32 @@ function handleGetData(event) {
         url: "https://www.superheroapi.com/api.php/1166343633774129/search/" + leftInput
 
     }).then(
+        // data parameter
         (data) => {
             apiData = data;
             render();
             // console.log(apiData);
             console.log(apiData.results);
 
+            // forEach loop to append to <select>
             apiData.results.forEach(element => {
                 let option = $('<option>');
                 option.addClass("option");
-                optionText = element.name;
-                option.html = optionText
-                $leftCharList.append(option);
-                
-
-                // console.log(option);
-
-
-
+                $leftCharList.append(option.text(element.name));
             });
 
-
         },
+        // error parameter
         (error) => {
             console.log("Character not found", error);
             
         }
     );
-    // console.log(leftInput);
-}
+ 
 
+    
+}
+// render function. Renders/returns apiData.results 
 function render() {
     $charName1.text(apiData.results[0].name);
     $intelligence.text(apiData.results[0].powerstats.intelligence);
