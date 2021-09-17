@@ -84,7 +84,7 @@ body {
     cursor: pointer;
 }
 
-#leftcharList {
+#leftCharList , #rightCharList {
     width: 41%;
     text-align: center;
 }
@@ -174,7 +174,7 @@ main {
 
 #leftStatsValues {
     width: 100%;
-    background-color: gold;
+    background-color: gold ;
     text-align: left;
     padding: 1px 20px 2px 0;
     
