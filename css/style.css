@@ -1,6 +1,8 @@
 h1 {
     font-size: 30px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    
     padding: 10px 10px 0 10px;
 }
 
@@ -13,6 +15,7 @@ h2 {
 h3 {
     font-size: 15px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: lightgrey;
     text-align: left;
     margin: 0;
     padding: 0 20px 20px 20px;
@@ -25,25 +28,25 @@ li {
 }
 
 body {
-    outline: black 1px solid;
-    background-image: linear-gradient(lightgrey , grey);
+    /* outline: black 1px solid; */
+    background-image: url("https://www.superherodb.com/gallery2/075/126/12687.jpg");
+    /* background-image: linear-gradient(lightgrey , grey); */
     /* background-color: lightgray; */
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     margin: 0;
-    padding: 5px;
+    padding: 3px;
     display: flex;
     flex-wrap: wrap;
     contain: content;
+    position: relative;
 }
 
-
 #headerDiv {
-    margin: 0;
-    padding: 0;
     text-align: center;
     width: 100%;
     outline: black 1px solid;
-    background-color: indianred;
+    background-color: rgb(240,20,30, 0.8)
+    ;
 }
 
 #submitDiv {
@@ -51,77 +54,68 @@ body {
    /* margin: 15px 0; */
    outline: black 1px solid;
    display: flex;
+   /* flex-wrap: wrap; */
 }
 
 #leftSubmitDiv {
     width: 50%;
-    background-color: blue;
-    outline: black 1px solid;   
+    background-color: rgb(21, 43, 239 , 0.8);
+    outline: grey 1px solid;   
     text-align: center;
 }
 
 #rightSubmitDiv {
     width: 50%;
-    background-color: green;
-    outline: black 1px solid;
-}
-
-#leftForm {
+    background-color: rgba(192, 16, 16, 0.5);
+    outline: grey 1px solid;
     text-align: center;
-    outline: black 1px solid;
 }
 
-#rightForm {
+#leftForm , #rightForm {
     text-align: center;
     outline: black 1px solid;
 }
 
 #leftInput , #rightInput {
     width: 50%;
+    text-align: center;
+    font-size: 18px;
 }
 
 #leftSubmitBtn, #rightSubmitBtn {
     cursor: pointer;
+    font-size: 14px;
 }
 
 #leftCharList , #rightCharList {
     width: 41%;
     text-align: center;
+    font-size: 16px;
 }
 
 main {
-    background-color: lightblue;
+    /* background-color: lightblue; */
     width: 100%;
+    margin: 0px;
     display: flex;
     flex-wrap: wrap;
-    contain:content;
+    position: relative;
+    /* contain:content; */
+    
 }
 
-#leftMainDiv{
+#leftMainDiv , #rightMainDiv {
     width: 50%;
-    /* float: left; */
+    margin: 0px;
     outline: black 1px solid;
+    position: relative;
 }
 
-#rightMainDiv  {
-    width: 50%;
-    /* float: right; */
-    outline: black 1px solid;
-}
-
-#leftImageDiv {
-    background-color: lightgreen;
-    outline: black 1px solid;
-    min-height: 30%;
-    max-height: 30%;
-    contain: content;
-}
-
-#rightImageDiv {
-    background-color: pink;
-    outline: blue 1px solid;
-    min-height: 30%;
-    max-height: 30%;
+#leftImageDiv , #rightImageDiv {
+    background-color: black;
+    outline: grey 1px solid;
+    min-height: 40%;
+    max-height: 40%;
     contain: content;
 }
 
@@ -129,6 +123,7 @@ main {
     width: 100%;
     object-fit: scale-down;
     object-position: top ;
+    display: block;
 }
 
 #rightImageDiv img{
@@ -141,7 +136,8 @@ main {
 #leftStatsDiv {
     /* padding: 5px 50px 5px 10px; */
     /* text-align: right; */
-    background-color: lightseagreen;
+    margin: 0px;
+    /* background-color: rgb(9, 54, 255 , 0.1); */
     outline: black 1px solid;
     contain: content;
 
@@ -150,62 +146,88 @@ main {
 #rightStatsDiv {
     /* padding: 5px 50px 5px 10px; */
     /* text-align: right; */
-    background-color: lightseagreen;
+    /* background-color: lightseagreen; */
     outline: black 1px solid;
     display: flex;
     flex-wrap: wrap;
-    contain: content;
+    /* contain: content; */
     
 }
 
 #charName1 {
     width: 100%;
     height: max-content;
-    background-color: palegoldenrod;
+    margin: 4px;
+    background-color: rgb(253,254,26, 0.9);
+    box-shadow: 0 1px 1px darkgrey , 0 3px 3px grey ;
+    border: 2px darkblue solid;
     
 }
 
 #charName2 {
     width: 100%;
     height: max-content;
-    background-color: palegoldenrod;
-    
+    margin: 4px;
+    background-color: rgb(253,254,26, 0.9);
+    box-shadow: 0 1px 1px darkgrey , 0 3px 3px grey ;
+    border: 2px darkred solid;
 }
 
 #leftStatsValues {
     width: 100%;
-    background-color: gold ;
-    text-align: left;
+    margin: 0px;
     padding: 1px 20px 2px 0;
-    
+    background-image: linear-gradient(rgb(4, 91, 221) , rgba(56, 161, 231, 0.8) , rgb(207, 207, 207 , 0.0));
+    background-image:linear-gradient();
+    /* background-repeat: no-repeat; */
+    /* background-color: rgba(53, 107, 255, 0.856) ; */
+    text-align: left;
+    position: relative;
 }
 
 #rightStatsValues {
     width: 100%;
-    background-color: gold;
+    margin: 0px;
+    padding: 1px 20px 2px 0;
+    background-image: linear-gradient(rgb(255, 37, 37) , rgba(104, 31, 31, 0.8) , rgba(63, 0, 0, 0));
+    background-image:linear-gradient();
+    /* background-repeat: no-repeat; */
+    /* background-color: rgba(53, 107, 255, 0.856) ; */
     text-align: left;
+    position: relative;
 }
 
 footer {
     width: 100%;
-    background-color: magenta;
+    background-color: rgb(121,0,15);
     height: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
     text-align: center;
+    margin: 0px;
     padding-top: 5px;
 }
 
-@media only screen and (max-width:1366px ) {
+
+@media only screen and (max-width: 1280px ) {
+    #leftImageDiv , #rightImageDiv {
+        min-height: 30%;
+        max-height: 30%;
+    }
+}
+
+@media only screen and (max-width:1024px ) {
     h1 {
-        font-size: 30px;
+        font-size: 40px;
     }
     h3 {
         font-size: 20px;
     }
     h2{
-        font-size: 25px;
+        font-size: 30px;
     }
     li {
-        font-size: 16px;
+        font-size: 18px;
     }
     p {
         font-size: 18px;
@@ -213,11 +235,30 @@ footer {
     body {
         /* height: 100vh; */
     }
+    #leftImageDiv , #rightImageDiv {
+        min-height: 30%;
+        max-height: 30%;
+    }
+
+    #leftInput , #rightInput {
+        width: 50%;
+        font-size: 18px;
+    }
+    
+    #leftSubmitBtn, #rightSubmitBtn {
+        font-size: 14px;
+        /* float: right; */
+    }
+
+    #leftCharList , #rightCharList {
+        width: 60%;
+        font-size: 14px;
+    }
   }
 
-@media only screen and (max-width: 812px ) {
+  @media only screen and (min-width: 900px ) {
     h1 {
-        font-size: 20px;
+        font-size: 25px;
     }
     h3 {
         font-size: 14px;
@@ -233,6 +274,107 @@ footer {
     }
     body {
         /* height: 100vh; */
+    }
+    #leftImageDiv , #rightImageDiv {
+        min-height: 25%;
+        max-height: 25%;
+    }
+    #leftInput , #rightInput {
+        width: 60%;
+        font-size: 14px;
+        float: left;
+    }
+    
+    #leftSubmitBtn, #rightSubmitBtn {
+        font-size: 12px;
+        float: right;
+    }
+
+    #leftCharList , #rightCharList {
+        width: 100%;
+        font-size: 12px;
+    }
+  }
+
+
+  @media only screen and (max-width: 600px ) {
+    h1 {
+        font-size: 25px;
+    }
+    h3 {
+        font-size: 14px;
+    }
+    h2{
+        font-size: 16px;
+    }
+    li {
+        font-size: 12px;
+    }
+    p {
+        font-size: 14px;
+    }
+    body {
+        /* height: 100vh; */
+    }
+    #leftImageDiv , #rightImageDiv {
+        min-height: 25%;
+        max-height: 25%;
+    }
+    #leftInput , #rightInput {
+        width: 60%;
+        font-size: 14px;
+        float: left;
+    }
+    
+    #leftSubmitBtn, #rightSubmitBtn {
+        font-size: 12px;
+        float: right;
+    }
+
+    #leftCharList , #rightCharList {
+        width: 100%;
+        font-size: 12px;
+    }
+  }
+
+
+@media only screen and (max-width: 375px ) {
+    h1 {
+        font-size: 25px;
+    }
+    h3 {
+        font-size: 12px;
+    }
+    h2{
+        font-size: 16px;
+    }
+    li {
+        font-size: 12px;
+    }
+    p {
+        font-size: 14px;
+    }
+    body {
+        /* height: 100vh; */
+    }
+    #leftImageDiv , #rightImageDiv {
+        min-height: 20%;
+        max-height: 20%;
+    }
+    #leftInput , #rightInput {
+        width: 60%;
+        font-size: 14px;
+        float: left;
+    }
+    
+    #leftSubmitBtn, #rightSubmitBtn {
+        font-size: 12px;
+        float: right;
+    }
+
+    #leftCharList , #rightCharList {
+        width: 100%;
+        font-size: 12px;
     }
   }
 

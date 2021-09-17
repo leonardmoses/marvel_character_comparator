@@ -158,7 +158,7 @@ function handleSelectRight(event) {
 //#region left side render function. Renders/returns apiData.results 
 function renderLeft() {
     $leftImage.attr('src', apiData.results[0].image["url"]);
-    $charName1.text("Alias: " + apiData.results[0].name);
+    $charName1.text(apiData.results[0].name);
     $fullName_left.text("Full Name:    " + apiData.results[0].biography['full-name']);
     $intelligence_left.text("Intelligence:    " + apiData.results[0].powerstats.intelligence);
     $strength_left.text("Strength:    " + apiData.results[0].powerstats.strength);
@@ -184,7 +184,7 @@ function renderLeft() {
 //#region right side render function. Renders/returns apiData.results
 function renderRight() {
     $rightImage.attr('src', apiData.results[0].image["url"]);
-    $charName2.text("Alias: " + apiData.results[0].name);
+    $charName2.text(apiData.results[0].name);
     $fullName_right.text("Full Name:    " + apiData.results[0].biography['full-name']);
     $intelligence_right.text("Intelligence:    " + apiData.results[0].powerstats.intelligence);
     $strength_right.text("Strength:    " + apiData.results[0].powerstats.strength);
