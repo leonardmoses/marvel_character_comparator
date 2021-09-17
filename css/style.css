@@ -2,7 +2,7 @@ h1 {
     font-size: 30px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: white;
-    
+    margin: 0px;
     padding: 10px 10px 0 10px;
 }
 
@@ -23,29 +23,30 @@ h3 {
 
 li {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 14px;
+    font-size: 16px;
+    color: white;
+    text-overflow: ellipsis;
     list-style-type: none;
 }
 
 body {
-    /* outline: black 1px solid; */
-    background-image: url("https://www.superherodb.com/gallery2/075/126/12687.jpg");
-    /* background-image: linear-gradient(lightgrey , grey); */
-    /* background-color: lightgray; */
-    /* background-repeat: no-repeat; */
     margin: 0;
-    padding: 3px;
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
     contain: content;
-    position: relative;
+    background: url("https://www.superherodb.com/gallery2/075/126/12687.jpg") no-repeat center center fixed;
+    /* background-image: url("https://www.superherodb.com/gallery2/075/126/12687.jpg"); */
+    background-color: rgb(41, 41, 41);
+
 }
 
 #headerDiv {
+    /* margin: 0px; */
     text-align: center;
     width: 100%;
     outline: black 1px solid;
-    background-color: rgb(240,20,30, 0.8)
+    background-color: rgb(240,20,30, 0.9)
     ;
 }
 
@@ -100,13 +101,14 @@ main {
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    /* contain:content; */
+    contain:content;
     
 }
 
 #leftMainDiv , #rightMainDiv {
     width: 50%;
     margin: 0px;
+    background-color: rgb(128, 128, 128, 0.7);
     outline: black 1px solid;
     position: relative;
 }
@@ -138,7 +140,7 @@ main {
     /* text-align: right; */
     margin: 0px;
     /* background-color: rgb(9, 54, 255 , 0.1); */
-    outline: black 1px solid;
+    /* outline: black 1px solid; */
     contain: content;
 
 }
@@ -147,7 +149,7 @@ main {
     /* padding: 5px 50px 5px 10px; */
     /* text-align: right; */
     /* background-color: lightseagreen; */
-    outline: black 1px solid;
+    /* outline: black 1px solid; */
     display: flex;
     flex-wrap: wrap;
     /* contain: content; */
@@ -178,9 +180,6 @@ main {
     margin: 0px;
     padding: 1px 20px 2px 0;
     background-image: linear-gradient(rgb(4, 91, 221) , rgba(56, 161, 231, 0.8) , rgb(207, 207, 207 , 0.0));
-    background-image:linear-gradient();
-    /* background-repeat: no-repeat; */
-    /* background-color: rgba(53, 107, 255, 0.856) ; */
     text-align: left;
     position: relative;
 }
@@ -190,9 +189,6 @@ main {
     margin: 0px;
     padding: 1px 20px 2px 0;
     background-image: linear-gradient(rgb(255, 37, 37) , rgba(104, 31, 31, 0.8) , rgba(63, 0, 0, 0));
-    background-image:linear-gradient();
-    /* background-repeat: no-repeat; */
-    /* background-color: rgba(53, 107, 255, 0.856) ; */
     text-align: left;
     position: relative;
 }
@@ -227,7 +223,7 @@ footer {
         font-size: 30px;
     }
     li {
-        font-size: 18px;
+        font-size: 14px;
     }
     p {
         font-size: 18px;
