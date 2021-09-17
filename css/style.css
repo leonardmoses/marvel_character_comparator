@@ -30,7 +30,9 @@ body {
     /* background-color: lightgray; */
     background-repeat: no-repeat;
     margin: 0;
-    padding: 1.5%;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
     contain: content;
 }
 
@@ -89,8 +91,9 @@ body {
 
 main {
     background-color: lightblue;
-    /* width: 100%; */
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
     contain:content;
 }
 
@@ -109,16 +112,16 @@ main {
 #leftImageDiv {
     background-color: lightgreen;
     outline: black 1px solid;
-    min-height: 20%;
-    max-height: 20%;
+    min-height: 30%;
+    max-height: 30%;
     contain: content;
 }
 
 #rightImageDiv {
     background-color: pink;
     outline: blue 1px solid;
-    min-height: 20%;
-    max-height: 20%;
+    min-height: 30%;
+    max-height: 30%;
     contain: content;
 }
 
@@ -136,19 +139,51 @@ main {
 }
 
 #leftStatsDiv {
-    padding: 5px 50px 5px 10px;
-    text-align: right;
+    /* padding: 5px 50px 5px 10px; */
+    /* text-align: right; */
     background-color: lightseagreen;
     outline: black 1px solid;
+    contain: content;
 
 }
 
 #rightStatsDiv {
-    padding: 5px 0 5px 10px;
-    text-align: left;
-    background-color: lightsteelblue;
+    /* padding: 5px 50px 5px 10px; */
+    /* text-align: right; */
+    background-color: lightseagreen;
     outline: black 1px solid;
+    display: flex;
+    flex-wrap: wrap;
+    contain: content;
     
+}
+
+#charName1 {
+    width: 100%;
+    height: max-content;
+    background-color: palegoldenrod;
+    
+}
+
+#charName2 {
+    width: 100%;
+    height: max-content;
+    background-color: palegoldenrod;
+    
+}
+
+#leftStatsValues {
+    width: 100%;
+    background-color: gold;
+    text-align: left;
+    padding: 1px 20px 2px 0;
+    
+}
+
+#rightStatsValues {
+    width: 100%;
+    background-color: gold;
+    text-align: left;
 }
 
 footer {
@@ -158,3 +193,46 @@ footer {
     text-align: center;
     padding-top: 5px;
 }
+
+@media only screen and (max-width:1366px ) {
+    h1 {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    h2{
+        font-size: 25px;
+    }
+    li {
+        font-size: 16px;
+    }
+    p {
+        font-size: 18px;
+    }
+    body {
+        /* height: 100vh; */
+    }
+  }
+
+@media only screen and (max-width: 812px ) {
+    h1 {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 14px;
+    }
+    h2{
+        font-size: 16px;
+    }
+    li {
+        font-size: 12px;
+    }
+    p {
+        font-size: 14px;
+    }
+    body {
+        /* height: 100vh; */
+    }
+  }
+
