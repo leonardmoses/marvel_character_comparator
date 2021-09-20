@@ -1,5 +1,4 @@
-// Global Variables
-
+//#region Global Variables
 //#region Left Variables
 const $leftInput = $('#leftInput');
 const $leftImage = $('#char1Img');
@@ -25,7 +24,7 @@ const $affiliation_left = $('#affiliation_left');
 const $relatives_left = $('#relatives_left');
 const $leftCharList = $('#leftCharList');
 const leftCharList = document.getElementById('leftCharList');
-//#endregion
+//#endregion left variables
 
 //#region right variables
 const $rightInput = $('#rightInput');
@@ -52,9 +51,11 @@ const $affiliation_right = $('#affiliation_right');
 const $relatives_right = $('#relatives_right');
 const $rightCharList = $('#rightCharList');
 const rightCharList = document.getElementById('rightCharList');
-//#endregion
+//#endregion right variables
+//#endregion Global Variables
 
 let selectText; 
+
 
 //#region AJAX functions for left side
 // function for search input/submit and ajax data for name population

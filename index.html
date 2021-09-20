@@ -7,114 +7,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script defer src="./js/script.js"></script>
 </head>
 
 <body>
-<div id="body">
-    <header id="headerDiv">
-        <h1>Marvel Character Comparator</h1>
-        <h3>Compare any two characters from the Marvel Universe! </br> Use the search bar to find a character. If there are multiple characters with similar names you may use the drop down menu to select the desired one.
-        </h3>
-    </header>
+    <div id="body">
+        <header id="headerDiv">
+            <h1>Marvel Character Comparator</h1>
+            <h3>Compare any two characters from the Marvel Universe! </br> Use the search bar to find a character. If
+                there are multiple characters with similar names you may use the drop down menu to select the desired
+                one.
+            </h3>
+        </header>
 
-    <div id="submitDiv">
-        <div id="leftSubmitDiv">
-            <form id="leftForm">
-                <input type="text" id="leftInput" placeholder="ex: Cyclops">
-                <input type="submit" id="leftSubmitBtn" value="Search">
-            </form>
-            <select name="leftCharList" id="leftCharList">
-           
-            </select>
-        </div>
-        <div id="rightSubmitDiv">
-            <form id="rightForm">
-                <input type="text" id="rightInput" placeholder="ex: Magneto">
-                <input type="submit" id="rightSubmitBtn" value="Search">
-            </form>
-            <select name="rightCharList" id="rightCharList">
+        <div id="submitDiv">
+            <div id="leftSubmitDiv">
+                <form id="leftForm">
+                    <input type="text" id="leftInput" placeholder="ex: Cyclops">
+                    <input type="submit" id="leftSubmitBtn" value="Search">
+                </form>
+                <select name="leftCharList" id="leftCharList">
 
-            </select>
+                </select>
+            </div>
+            <div id="rightSubmitDiv">
+                <form id="rightForm">
+                    <input type="text" id="rightInput" placeholder="ex: Magneto">
+                    <input type="submit" id="rightSubmitBtn" value="Search">
+                </form>
+                <select name="rightCharList" id="rightCharList">
+
+                </select>
+            </div>
         </div>
+
+        <main id="mainContentDiv">
+
+            <div id="leftMainDiv">
+                <div id="leftImageDiv">
+                    <img src="https://www.superherodb.com/gallery2/075/251/25114.jpg"
+                        alt="Character is camera shy. No picture available" id="char1Img">
+                </div>
+
+                <div id="leftStatsDiv">
+                    <h2 id="charName1">Name: </h2>
+                    <div id="leftStatsValues">
+                        <ul>
+                            <li id="full-name_left">-</li>
+                            <li id="intelligence_left">-</li>
+                            <li id="strength_left">-</li>
+                            <li id="speed_left">-</li>
+                            <li id="durability_left">-</li>
+                            <li id="power_left">-</li>
+                            <li id="combat_left">-</li>
+                            <li id="alignment_left">-</li>
+                            <li id="gender_left">-</li>
+                            <li id="race_left">-</li>
+                            <li id="height_left">-</li>
+                            <li id="weight_left">-</li>
+                            <li id="eye-color_left">-</li>
+                            <li id="hair-color_left">-</li>
+                            <li id="birthplace_left">-</li>
+                            <li id="occupation_left">-</li>
+                            <li id="base_left">-</li>
+                            <li id="affiliation_left">-</li>
+                            <li id="relatives_left">-</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="rightMainDiv">
+                <div id="rightImageDiv">
+                    <img src="https://www.superherodb.com/gallery2/075/251/25114.jpg"
+                        alt="Character is camera shy. No picture available" id="char2Img">
+                </div>
+
+                <div id="rightStatsDiv">
+                    <h2 id="charName2">Name: </h2>
+                    <div id="rightStatsValues">
+                        <ul>
+                            <li id="full-name_right">-</li>
+                            <li id="intelligence_right">-</li>
+                            <li id="strength_right">-</li>
+                            <li id="speed_right">-</li>
+                            <li id="durability_right">-</li>
+                            <li id="power_right">-</li>
+                            <li id="combat_right">-</li>
+                            <li id="alignment_right">-</li>
+                            <li id="gender_right">-</li>
+                            <li id="race_right">-</li>
+                            <li id="height_right">-</li>
+                            <li id="weight_right">-</li>
+                            <li id="eye-color_right">-</li>
+                            <li id="hair-color_right">-</li>
+                            <li id="birthplace_right">-</li>
+                            <li id="occupation_right">-</li>
+                            <li id="base_right">-</li>
+                            <li id="affiliation_right">-</li>
+                            <li id="relatives_right">-</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div>
+
+        </main>
+
+        <footer id="footerDiv">
+            <p>"Marvel Fantasy Draft" game coming soon!</p>
+        </footer>
     </div>
-
-    <main id="mainContentDiv">
-        <div id="leftMainDiv">
-            <div id="leftImageDiv">
-                <img src="https://www.superherodb.com/gallery2/075/251/25114.jpg"
-                    alt="Character is camera shy. No picture available" id="char1Img">
-            </div>
-        
-            <div id="leftStatsDiv">
-                <h2 id="charName1">Name: </h2>
-                <div id="leftStatsValues">
-                    <ul>
-                        <li id="full-name_left"></li>
-                        <li id="intelligence_left">-</li>
-                        <li id="strength_left">-</li>
-                        <li id="speed_left">-</li>
-                        <li id="durability_left">-</li>
-                        <li id="power_left">-</li>
-                        <li id="combat_left">-</li>
-                        <li id="alignment_left">-</li>
-                        <li id="gender_left">-</li>
-                        <li id="race_left">-</li>
-                        <li id="height_left">-</li>
-                        <li id="weight_left">-</li>
-                        <li id="eye-color_left">-</li>
-                        <li id="hair-color_left">-</li>
-                        <li id="birthplace_left">-</li>
-                        <li id="occupation_left">-</li>
-                        <li id="base_left">-</li>
-                        <li id="affiliation_left">-</li>
-                        <li id="relatives_left"></li>
-                    </ul>
-                </div>
-            </div>   
-        </div>
-            
-
-        <div id="rightMainDiv">
-            <div id="rightImageDiv">
-                <img src="https://www.superherodb.com/gallery2/075/270/27035.jpg"
-                    alt="Character is camera shy. No picture available" id="char2Img">
-            </div>
-            <div id="rightStatsDiv">
-                <h2 id="charName2">Name: </h2>
-                <div id="rightStatsValues">
-                    <ul>
-                        <li id="full-name_right">-</li>
-                        <li id="intelligence_right">-</li>
-                        <li id="strength_right">-</li>
-                        <li id="speed_right">-</li>
-                        <li id="durability_right">-</li>
-                        <li id="power_right">-</li>
-                        <li id="combat_right">-</li>
-                        <li id="alignment_right">-</li>
-                        <li id="gender_right">-</li>
-                        <li id="race_right">-</li>
-                        <li id="height_right">-</li>
-                        <li id="weight_right">-</li>
-                        <li id="eye-color_right">-</li>
-                        <li id="hair-color_right">-</li>
-                        <li id="birthplace_right">-</li>
-                        <li id="occupation_right">-</li>
-                        <li id="base_right">-</li>
-                        <li id="affiliation_right">-</li>
-                        <li id="relatives_right">-</li>
-                    </ul>
-                </div>
-            </div> 
-
-        <div>
-    </main>
-
-    <footer id="footerDiv">
-        <p>"Marvel Fantasy Draft" game coming soon!</p>
-    </footer>
-</div>
 </body>
 
 </html>
