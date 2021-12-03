@@ -56,14 +56,15 @@ const rightCharList = document.getElementById('rightCharList');
 
 let selectText; 
 
-
 //#region AJAX functions for left side
 // function for search input/submit and ajax data for name population
 function handleGetNamesLeft(event) {
+    // prevents the default action of going to new URL upon search submit
     event.preventDefault();
-
+    // API directions say to add custom name to end of URL to get character info.
+    // Store user input into variable to add variable at the end of URL.
     leftInput = $leftInput.val();
-    
+    // ajax API call
     $.ajax({
         url: "https://www.superheroapi.com/api.php/1166343633774129/search/" + leftInput
     }).then((data) => {
@@ -76,7 +77,6 @@ function handleGetNamesLeft(event) {
                     let option = $('<option>');
                     option.addClass("option");
                     $leftCharList.append(option.text(element.name));
-
                 });
             },(error) => {
                 console.log("Character not found", error);
@@ -84,12 +84,12 @@ function handleGetNamesLeft(event) {
         );
 }
 
+
 // function for dropdown select and ajax data for stats
 function handleSelectLeft(event) {
     select = event.target;
     selectText = select.value;
     console.log(selectText);
-
 
     $.ajax({
         url: "https://www.superheroapi.com/api.php/1166343633774129/search/" + selectText
@@ -110,10 +110,12 @@ function handleSelectLeft(event) {
 //#region AJAX functions for right side
 // function for search input/submit and ajax data for name population
 function handleGetNamesRight(event) {
+    // prevents the default action of going to new URL upon search submit
     event.preventDefault();
-
+    // API directions say to add custom name to end of URL to get character info.
+    // Store user input into variable to add variable at the end of URL.
     rightInput = $rightInput.val();
-    
+    // ajax API call
     $.ajax({
         url: "https://www.superheroapi.com/api.php/1166343633774129/search/" + rightInput
     }).then((data) => {
@@ -214,3 +216,7 @@ leftCharList.addEventListener('input', handleSelectLeft);
 
 $('#rightForm').on('submit' , handleGetNamesRight);
 rightCharList.addEventListener('input', handleSelectRight);
+
+
+// Note: How to make ajax call
+// $.ajax({/*"URL*/}).then((data) => {/*function when getting the data*/},(error) => {/*what happens during the error*/});
